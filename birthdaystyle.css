@@ -1,0 +1,188 @@
+body {
+    font-family: 'Dhurjati', sans-serif;
+    font-family: 'Spline Sans Mono', monospace;
+    font-family: 'Teko', sans-serif;
+    background-image: url("summerfield.png"); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    }
+    
+    
+    #wrapper {
+      margin: 15px auto;
+      width: 1200px;
+      background-color: #ffffff77;
+      background-size: cover;
+      border: 1px; 
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 24px;
+    }
+  
+    a {
+      text-decoration: none; 
+    }
+    
+    header {
+      grid-column: span 12; 
+      background-color: #ffffff77;   
+    }
+    
+    main {
+      grid-column: span 12;  
+      height: 500px; 
+      display: block; 
+      margin-left: auto; 
+      margin-right: auto; 
+      position: relative;
+    }
+
+    img { 
+      width: 30%;
+      display: block; 
+      position: relative;
+    }
+  
+    h1 {
+      font-size: larger;
+      font-family: 'Spline Sans Mono', monospace;
+      text-align: center;
+      padding: 20px; 
+      background-image: linear-gradient(0deg, #ff64e8 0%, #FBAB7E 50%, #F7CE68 100%);
+      color: #ff64e8;
+      border-radius: 25px; 
+   }
+  
+    
+    nav {
+      grid-column: span 2; 
+      background-color: #ffffff77;
+    }
+    
+    nav ul {
+      padding: 0; 
+      margin: 0; 
+      list-style: none; 
+      list-style-type: none;
+    
+    }
+    
+    nav li {
+      background-color: #5f5f00;
+      color: #2c2c00; 
+      padding: 24px; 
+      margin: 0, 24px; 
+      display: inline-block;
+    }
+    
+    footer {
+      grid-column: span 12; 
+      grid-row: span 1; 
+      background-color: #ffffff77;
+      border: 1px; 
+      position: relative;
+      display: inline-block;
+    }
+    
+    footer p {
+      background-color: #ffffff77;
+      position: relative;
+      display: inline-block;
+
+    }
+  
+    .div {
+      background-color: #ffffff77;
+      border: none;
+      padding: 25px; 
+      grid-column: span 10; 
+    }
+    
+    /*DROPUP*/
+    
+    /* Dropup Button */
+    .dropbtn {
+      font-family: 'Teko', sans-serif;
+      text-align: left; 
+      background-color: #ffffff77;
+      color: #2c2c00;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      min-width: 160px;
+      transition: background-color 1.0s, width 2.0s, color 2.0s;
+    }
+    
+    /* The container <div> - needed to position the dropup content */
+    .dropup {
+      position: relative;
+      display: inline-block;
+      background-color: #ffffff77;
+    }
+    
+    /* Dropup content (Hidden by Default) */
+    .dropup-content {
+      display: none;
+      position: absolute;
+      bottom: 50px;
+      background-color: #ffffff77;
+      min-width: 200px;
+      z-index: 1;
+      margin: 20px, 0px,0px,0px; 
+    }
+    
+    /* Links inside the dropup */
+    .dropup-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      background-color: #ffffff77;
+    }
+    
+    /* Change color of dropup links on hover */
+    .dropup-content a:hover {
+      background-color: #f3f3f377;
+      transition: background-color 1.0s, width 2.0s, color 2.0s;}
+    
+    /* Show the dropup menu on hover */
+    .dropup:hover .dropup-content {
+      display: block;
+    }
+    
+    /* Change the background color of the dropup button when the dropup content is shown */
+    .dropup:hover .dropbtn {
+      background-color: #f3f3f377;
+    }
+  
+  body {
+    /*min-block-size: 100vh;
+    padding: 5vmin;*/
+    align-content: center;
+    grid-column: span 12;
+    background-color: #ffffff77;
+  }
+  
+
+  /*HOME ANIMATION*/
+
+  
+  #animate {
+
+    position: relative;
+    background-image: "bug1.png";
+    width: 70%; 
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation: move 3s ease infinite;
+  }
+  
+  @keyframes move {
+    0%   {left:0px; top:400px;}
+    20%  {left:200px; top:0px;}
+    40%  {left:400px; top:400px;}
+    60%  {left:0px; top:200px;}
+    80% {left: 400px; top: 200px;}
+    100% {left:0px; top:400px;}
+  }
+  
