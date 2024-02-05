@@ -1,0 +1,76 @@
+body { background-color: #999999;
+  background-image: url("forest1.png") ;
+  background-repeat: no-repeat; 
+  background-size: cover;}
+
+#wrapper {
+  margin: 1em auto;
+  padding: 0;
+  width: 960px;
+  border: 1px solid #ffffff61;
+  background-color: #ffffff;
+  background-image: url("forest1.png") ;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+a {
+    text-decoration: none; 
+  }
+  
+  header {
+    grid-column: span 12; 
+    background-color: #ffffff77;  
+    color: rgba(17, 26, 6, 0.699); 
+    font-family: 'Rubik Glitch Pop', system-ui;
+    text-align: center;
+    padding: 10px; 
+  }
+
+  main {
+    grid-column: span 12;  
+    height: 500px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: relative;
+    align-content: center;
+    display: block; 
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+  aside img { 
+    width: 10%;
+    display: block; 
+    position: relative;
+    animation: back-ani 5s ease infinite;
+  }
+
+  @keyframes back-ani {
+    0%   {opacity: 1.0;}
+    50%  {opacity: 0.25;}
+    100% {opacity: 1.0;}
+  }
+
+
+  .bug3 {
+    position: absolute;
+    background-image: "bug3.png";
+    width: 10%; 
+    animation-duration: 10s;
+    animation: move 3s ease infinite;
+  }
+  
+  @keyframes move {
+    0%   {left:40%; top:20%;}
+    15%  {left: 40%; top:30%}
+    30%  {left:40%; top:20%}
+    50%  {left:40%; top:75% }
+    100% {left:40%; top:20%;}
+  }
