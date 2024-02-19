@@ -1,0 +1,359 @@
+body {
+    font-family: 'Dhurjati', sans-serif;
+    font-family: 'Spline Sans Mono', monospace;
+    font-family: 'Teko', sans-serif;
+    }
+    
+    
+    #wrapper {
+      margin: 15px auto;
+      width: 1200px;
+      background-color: #ffffff;
+      background-size: cover;
+      border: 1px; 
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 24px;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+    
+    header {
+      grid-column: span 12; 
+      background-color: #ffffff;
+      margin-left: 15px;
+      margin-right: 20px;  
+      margin-bottom: 5px; 
+    }
+    
+    main {
+      grid-column: span 10; 
+    }
+  
+    h1 {
+      font-size: larger;
+      font-family: 'Spline Sans Mono', monospace;
+      text-align: left;
+      padding: 5px; 
+      color: #191900; 
+   }
+  
+   h2 {
+    font-size: large;
+    font-family: 'Spline Sans Mono', monospace;
+    text-align: left;
+    color: #191900; 
+    margin: 3px; 
+   }
+  
+    h3 {
+      font-size: small;
+      font-family: 'Teko', sans-serif;
+      text-align: center; 
+      color: #191900; 
+    }
+    
+    nav {
+      grid-column: span 2; 
+      background-color: #ffffff;
+      margin-top: 10px; 
+    }
+    
+    nav ul {
+      padding: 0; 
+      margin: 0; 
+      list-style: none; 
+      list-style-type: none;
+    
+    }
+    
+    nav li {
+      background-color: #5f5f00;
+      color: #2c2c00; 
+      padding: 24px; 
+      margin: 0, 24px; 
+      display: inline-block;
+    }
+  
+    aside {
+      grid-column: span 1; 
+      margin-top: 20px; 
+    }
+    
+    aside img {
+      grid-column: span 1; 
+      width: 75%;
+      margin: 10px; 
+    }
+    
+    footer {
+      grid-column: span 12; 
+      grid-row: span 1; 
+      background-color: #ffffff;
+      border: 1px; 
+      position: relative;
+      display: inline-block;
+      padding-left: 5px; 
+    }
+    
+    footer p {
+      background-color: #ffffff;
+      position: relative;
+      display: inline-block;
+      margin: 20px, 20px, 20px, 20px;
+    }
+  
+    footer img {
+      width: 10%; 
+      display: block;
+      margin-left: auto;
+    }
+  
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+    
+    .div {
+      background-color: #ffffff;
+      border: none;
+      padding: 15px; 
+      margin: 5px 5px 5px 5px;
+      grid-column: span 10; 
+    }
+    
+    /*DROPUP*/
+    
+    /* Dropup Button */
+    .dropbtn {
+      font-family: 'Teko', sans-serif;
+      text-align: left; 
+      background-color: #ffffff;
+      color: #2c2c00;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      min-width: 160px;
+      transition: background-color 1.0s, width 2.0s, color 2.0s;
+    }
+    
+    /* The container <div> - needed to position the dropup content */
+    .dropup {
+      position: relative;
+      display: inline-block;
+      margin: 20px, 0px, 0px, 20px; 
+      background-color: #ffffff;
+    }
+    
+    /* Dropup content (Hidden by Default) */
+    .dropup-content {
+      display: none;
+      position: absolute;
+      bottom: 50px;
+      background-color: #ffffff;
+      min-width: 200px;
+      z-index: 1;
+      margin: 20px, 0px,0px,0px; 
+    }
+    
+    /* Links inside the dropup */
+    .dropup-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      background-color: #ffffff;
+    }
+    
+    /* Change color of dropup links on hover */
+    .dropup-content a:hover {
+      background-color: #f3f3f3;
+      transition: background-color 1.0s, width 2.0s, color 2.0s;}
+    
+    /* Show the dropup menu on hover */
+    .dropup:hover .dropup-content {
+      display: block;
+    }
+    
+    /* Change the background color of the dropup button when the dropup content is shown */
+    .dropup:hover .dropbtn {
+      background-color: #f3f3f3;
+    }
+    
+  
+  
+  article {
+    grid-column: span 10;
+    background-color: #ffffff;
+    margin-left: 25px; 
+    margin-right: 20px; 
+    align-items: center;
+   
+  }
+  
+  article img {
+    width: 40%;
+    align-items: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    min-block-size: 100vh;
+    padding: 5vmin;
+  }
+  
+  img {
+    block-size: auto;
+    max-inline-size: 100%;
+    vertical-align: middle;
+  }
+  
+  /* Embed */
+  
+  .embed {
+    overflow: hidden;
+    padding-block-start: 100%;
+    position: relative;
+  }
+  
+  .embed--1-2 {
+    padding-top: calc(100% / (1 / 2));
+  }
+  
+  .embed--2-1 {
+    padding-top: calc(100% / (2 / 1));
+  }
+  
+  .embed--2-3 {
+    padding-top: calc(100% / (2 / 3));
+  }
+  
+  .embed > * {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    padding: 0.25em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Gallery  */
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .gallery__item--h-2 {
+    grid-column-end: span 2;
+  }
+  
+  .gallery__item--h-3 {
+    grid-column-end: span 3;
+  }
+  
+  .gallery__item--v-2 {
+    grid-row-end: span 2;
+  }
+  
+  .gallery__item--v-3 {
+    grid-row-end: span 3;
+  }
+  
+  
+  /*HOME ANIMATION*/
+  body {
+    padding: 30px;
+  }
+  
+  #animate {
+    position: absolute;
+    background-image: "bug1.png";
+    width: 50%;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation: move 15s ease infinite;
+  }
+  
+  @keyframes move {
+    0%   {left:0px; top:0px;}
+    25%  {left:300px; top:0px;}
+    50%  {left:200px; top:300px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+  
+  @layer demo {
+    .compare {
+      display: grid;
+      
+      > * {
+        grid-area: 1 / 1;
+      }
+      
+      > section {
+        display: grid;
+        place-content: center;
+      }
+    }
+    
+    .before {
+      clip-path: inset(0 calc(100% - var(--pos, 50%)) 0 0);
+    }
+    
+    .after {
+      clip-path: inset(0 0 0 var(--pos, 50%));
+    }
+    
+    input[type="range"] {
+      z-index: 1;
+      appearance: none;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+      
+      &::-webkit-slider-thumb {
+        appearance: none;
+        width: 4px;
+        height: 100dvh;
+        background-color: CanvasText;
+      }
+      
+      &::-moz-range-thumb {
+        appearance: none;
+        width: 4px;
+        height: 100dvh;
+        background-color: CanvasText;
+      }
+    }
+  }
+  
+  @layer demo.support {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+  
+    html {
+      block-size: 100%;
+      color-scheme: dark light;
+    }
+  
+    body {
+      min-block-size: 100%;
+      font-family: system-ui, sans-serif;
+      display: grid;
+    }
+    
+    img {
+      max-block-size: 80dvh;
+    }
+  }
