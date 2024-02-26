@@ -1,0 +1,142 @@
+/* Default Layout (Mobile) */
+
+body {
+	background-color: #ffffff;
+	font-family:'Spline Sans Mono', monospace;
+	margin: 0;
+	padding: 1em;
+}
+
+h1 {
+	font-family:'Spline Sans Mono', monospace;
+	text-transform: none;
+	color: black;
+	font-size: 2em;
+	margin: 0 0 .25em 0;
+	padding: 0;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	text-align: center;
+	margin: 15px; 
+  }
+
+nav a {
+	background-color: #bebebe;
+	color: black; 
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform:none; 
+	background-color: #eee;
+	padding: 1em;
+}
+
+footer {
+	background-color: #ffffff;
+	position: relative;
+	display: inline-block;
+	padding: .5em;
+	text-align: center;
+	/*grid-template-columns: repeat(4,1fr);*/
+}
+
+footer p {
+    position:relative;
+    display: inline-block;
+  }
+
+footer img {
+	width: 80%; 
+	display: inline-block;
+	float: right; 
+  }
+
+#mainimg {
+	width: 100%;
+	margin-bottom: 1rem;
+	display: inline-block;
+  }
+
+  nav {
+	display:inline-block; 
+	grid-template-columns: repeat(4,1fr);
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	margin-bottom: 1rem;
+  }
+
+  aside {
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  }
+  
+  aside img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 25%;
+  }
+
+
+/*  Media Queries (responsive to screen width) */
+@media all and (min-width: 30rem){
+	h1 { color: rgb(0, 0, 0); }
+	nav { grid-template-columns: repeat(4,1fr) }
+	#mainimg { width: 50%; float:none;  }
+	footer img { width: 40%; float:inline-end}
+	nav { width: 30%; grid-template-columns: 1fr; }
+  	nav a { margin-right: 1rem; }
+	aside { width: 30%; float:left;  }
+	main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2rem; }
+	body { max-width: 960px; margin: 0rem auto; }
+  }  
+
+
+  .dropbtn {
+    background-color: #DEDEDE;
+    color: #000000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    box-shadow: inset, 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: background-color 1.0s, width 2.0s, color 2.0s;
+	margin: .25em;
+  }
+
+  .dropup {
+    position: relative;
+    display: inline-block;
+	margin: .25em;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px, 16px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	margin: .25em;
+  }
+  
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropup-content a:hover {background-color: #ddd}
+  
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  .dropup:hover .dropbtn {
+    background-color: #c9c9c9;
+  }
